@@ -10,8 +10,11 @@ class Question(models.Model):
 	def __str__(self):
 		return self.question_text
 
-	def was_publiched_recently(self):
+	def was_publiched_recently(self): #published:)
 		return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
+		was_publiched_recently.admin_order_field = 'pub_date'
+		was_publiched_recently.boolean = True
+		was_publiched_recently.chort_description = 'Недавно опубликован?'
 
 
 class Choice(models.Model):
