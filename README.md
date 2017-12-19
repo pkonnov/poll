@@ -1,2 +1,2 @@
 # poll
-django 2.0 ver
+django 1.8 ver
