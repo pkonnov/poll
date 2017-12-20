@@ -19,11 +19,6 @@ from django.conf.urls import include, url
 
 
 urlpatterns = [
-<<<<<<< HEAD
 	url(r'^polls/', include('polls.urls', namespace="polls")),
     url(r'^admin/', include(admin.site.urls)),
-=======
-	url(r'^polls/', include('polls.urls')),
-    url('admin/', admin.site.urls),
->>>>>>> 599ca84eefb8c187256b2577de590cada6e1be2c
 ]
